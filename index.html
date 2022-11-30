@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin:0px">
+<div style="width:100%; height: 100vh">
+    <button onclick="connect()">Connect</button>
+    <iframe id="widget"
+            src='https://widget.1nft.store/?overview=false&collections=bb93f18f-94d7-443f-a2b6-2f4006dd39bc,8d5dd4e0-1c63-43ad-842a-f0d04227879d&blockchains=BNBCHAINTESTNET,BNBCHAIN&search_s=true&blockchain_s=true&theme_s=true&palettes_dark=[{"--custom-body-bg":"0f0f0f"},{"--custom-main":"9bf00b"},{"--custom-main-hover":"87d10a"},{"--custom-bright-1":"262626"},{"--custom-bright-2":"383838"},{"--custom-block-bg":"1a1a1a"}]&palettes_white=[{"--custom-light-body-bg":"ffffff"},{"--custom-light-main":"76B809"},{"--custom-light-main-hover":"87d10a"},{"--custom-light-bright-1":"E0E0E0"},{"--custom-light-bright-2":"383838"},{"--custom-light-block-bg":"ffffff"}] '
+            frameborder='0' width="100%" height="100%"></iframe>
+    <script src="https://widget.1nft.store/wscript.js"></script>
+    <script>
+        function connect(){
+            console.log(1111)
+            window.ethereum.request({ method: 'eth_requestAccounts' });
+        }
+    </script>
+</div>
+</body>
+</html>
